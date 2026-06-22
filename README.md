@@ -7,15 +7,11 @@ HAM10000 dermoscopic image dataset.
 ## Overview
 This repository contains the code for a study investigating how aggregation 
 function choice affects the generalization performance of GNNs on 
-image-derived patch graphs. The study compares GraphSAGE variants with 
-mean, sum, and max aggregation against GIN with fixed and learnable epsilon.
+image-derived patch graphs.
 
 ## Models Compared
-- GraphSAGE with mean aggregation
-- GraphSAGE with sum aggregation
-- GraphSAGE with max aggregation
-- GIN with fixed epsilon
-- GIN with learnable epsilon
+- GraphSAGE with mean, sum, and max aggregation
+- GIN with fixed and learnable epsilon
 
 ## Dataset
 HAM10000 dermoscopic image dataset — 10,015 dermatoscopic images across 
@@ -28,24 +24,7 @@ Available at: https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 - PyTorch Geometric
 - torchvision
 - scikit-learn
-- matplotlib
-- seaborn
-- pandas
-- tqdm
-- Google Colab Pro (recommended)
-- GPU with at least 15GB VRAM recommended
-
-## How To Run
-1. Open the notebook in Google Colab
-2. Mount your Google Drive
-3. Set up Kaggle credentials in Cell 4
-4. Run all cells in order
-5. Results and models are saved automatically to Google Drive
-
-## Hardware Used
-- Google Colab Pro
-- NVIDIA Tesla T4 GPU
-- 51GB RAM
+- Google Colab Pro with T4 GPU
 
 ## Results
 See the report for full experimental results and analysis.
